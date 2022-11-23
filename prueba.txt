@@ -1,0 +1,117 @@
+
+
+
+
+
+
+
+Desafío de front-end
+Proporcionamos un código de plantilla de React Native simple. Su objetivo es modificar el componente para que el contador se muestre correctamente y se incremente en uno cada vez que se presiona el botón. Puede agregar clases y estilos, pero asegúrese de dejar los ID de los elementos como están.
+
+////////////**********************
+
+import React, { useState } from "react";
+import { Text, View } from "react-native";
+
+const SimpleCounter = () => {
+  const [count, setCount] = useState(20);
+  const increment = () => setCount(count + 1);
+  return (
+    <View>
+      <Text>button count: <span id="actualCount">{ count }</span></Text>
+      <button onClick={increment} id="mainButton">Increase</button>
+    </View>
+  );
+};
+
+export default SimpleCounter;
+
+////////////**********************
+
+Envíe su código una vez que esté completo y nuestro sistema validará su salida.
+
+
+Haga que la función ArrayChallenge (strArr) lea la matriz de cadenas almacenada en strArr, que contendrá 2 elementos: el primer elemento será una secuencia de caracteres y el segundo elemento será una cadena larga de palabras separadas por comas, en orden alfabético , que representa un diccionario de cierta longitud arbitraria. Por ejemplo: strArr puede ser: ["hola gato", "manzana, murciélago, gato, adiós, hola, amarillo, por qué"]. Su objetivo es determinar si el primer elemento en la entrada se puede dividir en dos palabras, donde ambas palabras existen en el diccionario que se proporciona en la segunda entrada. En este ejemplo, el primer elemento se puede dividir en dos palabras: hola y gato porque ambas palabras están en el diccionario.
+
+Su programa debe devolver las dos palabras que existen en el diccionario separadas por una coma. Entonces, para el ejemplo anterior, su programa debería devolver hello, cat. Solo habrá una forma correcta de dividir el primer elemento de caracteres en dos palabras. Si no hay forma de dividir la cadena en dos palabras que existen en el diccionario, devolver la cadena no es posible. El primer elemento en sí mismo nunca existirá en el diccionario como una palabra real.
+Ejemplos de
+Entrada: ["baseball", "a, todo, b, bola, bas, base, gato, código, d, e, salir, z"]
+Salida: base, ball
+Entrada: ["abcgefd", "a, ab, abc, abcg, b, c, perro, e, efd, zzzz"]
+Salida: abcg, efd
+
+
+Usando el marco React Native, construya una calculadora que funcione con una interfaz de usuario agradable usando solo Typecript. No es necesario que maneje todos los tipos de errores, pero debería haber algunos informes básicos de errores.
+
+
+Requisitos
+
+1. Debe poder realizar una operación en dos números.
+
+2. Informe básico de errores.
+
+3. El código es modular y está libre de errores.
+
+
+Cómo enviar
+
+Sube el código de este proyecto a GitHub y publica un enlace a tu repositorio a continuación.
+
+
+https://github.com/CuatzoFernando/calculator-react-native
+
+
+
+What is the difference between git merge and git rebase? the rebase unifies the branches and loses the history of the commits, the merge leaves the graph of the branches without losing the history.
+
+How do you find a list of files that have been changed in a particular commit?  git diff-tree -r {hash}
+
+What is the process to revert a commit that has already has been pushed and made public? git reset --hard HEAD@{1}   git push -f
+
+What is Denormalization in databases?  It is used to increase the performance of a database, the idea is to add redundant data to reduce execution time, generating more accessible reports.
+
+What are some of the different types of indexes in SQL? CLUSTERED INDEX, NON CLUSTERED INDEX, COLUMN STORE INDEX, FILTERED INDEX, HASH INDEX, UNIQUE INDEX
+
+What is the difference between the DELETE and TRUNCATE commands in SQL?
+
+1. DELETE:
+DELETE is a DML (Data Manipulation Language) command and is used when we delete one or more records from the database, the WHERE clause can be used to filter a condition, if this clause is not available it deletes all the records by default .
+
+2. TRUNCATE:
+TRUNCATE is a Data Definition Language (DDL) command and is used to remove all records from a table. Unlike the DELETE command, the TRUNCATE command does not contain a WHERE clause. In the TRUNCATE command, the transaction log is logged for each page of deleted data. Unlike the DELETE command, the TRUNCATE command is fast and changes cannot be reversed.
+
+
+What is a constraint in SQL? In the database, the restrictions are predefined rules that are applied to one or more columns, these are used to ensure the fidelity of the data.
+
+What is the difference between a Clustered and Non-Clustered Index?  The nonclustered index stores the data in one area and the indexes in another area. The clustered index stores and sorts rows of data in a view or table.
+
+SELECT RIGHT(Studentname, 5) as Studentname from student   RESULT:  tname as Studentname
+
+
+What are the four essential states of an activity?    Active, Paused, Stopped, Destroyed.
+
+What is a ContentProvider and what is it typically used for? It encapsulates the data and provide mechanisms for defining data security.
+
+What is the purpose of managed object context (NSManagedObjectContext) in Objective-C and how does it work?
+Allows the developer to fetch an object from a persistent store and make modifications before deciding whether to discard or commit these changes.
+
+What is NSFetchRequest?
+The class responsible for fetching from Core Data.
+
+for (var i = 0; i < 3; i++) {
+  setTimeout(function() { alert(i); }, 1000 + i);
+}    Number 3 alerted three times
+
+(function() {
+  var a = b = 5;
+})();
+
+console.log(b);    5
+
+
+What does the following command do with respect to the Amazon EC2 security groups: "ec2-create-group CreateSecurityGroup"
+Creates a new security group for use with your account.
+
+If I want my instance to run on a single-tenant hardware on AWS, which value do I have to set the instance's tenancy attribute to?  Dedicated
+
+El atributo de tenencia de la instancia debe establecerse en Instancia dedicada. El resto de los valores no son válidos.
